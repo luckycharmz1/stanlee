@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 135vh;
+    width: 100%;
+    background-image: url(img/StantheMan-1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-img{
+    width: 150px;
+    background-color: #fff;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    background-color: #fff;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+}
+
+.grid {
+    max-width: 80rem;
+    margin: 0 fixed;
+    display: column;
+    columns: 2;
+    gap: 5em;
+    background-color:  #fff; 
+}
+
+.grid >*{
+    break-inside: avoid;
+}
+
+@supports (grid-template-rows: masonry;)
+
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry; 
+    background-color: #fff;   
+    /*align-tracks: stretch; */
+}
+
+
+.featured{
+    grid-column: span 2;
+}
+
+:root{
+    --ff-primary: basic-sans, sans serif;
+    --clr-primary: #ee6352;
+    --clr-body:#333;
+    --clr-bg: #ddd;
+    --spacer:1rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.bio {
+    height: 100vh;
+    background-image: url('img/stan\ lee\ mural2.jpg') no-repeat;
+    background: url('img/stan\ lee\ mural2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.bio-content {
+    max-width: 600px;
+}
+
+.bio-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.bio-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.bio-content p{
+    font-size: 16px;
+    color: #fff;
+    margin: 20px 0 40px;
+}
+
+.btn-box {
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a::nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a::nth-child(2):hover{
+    color: #081b29;
+}
+
+
+.btn-box a::nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover:before{
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a:hover{
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover:before{
+    width: 100%;
+}
+
+.bio-imgHover {
+    position: absolute;
+    top: -10;
+    right: 60px;
+    width: 700px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.bio-imgHover:hover {
+    background: #081b29;
+    opacity: .8; 
+}
