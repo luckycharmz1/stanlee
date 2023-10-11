@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="img/png-transparent-iron-man-iceman-stan-lee-foundation-comics-superhero-stan-lee-comics-text-superhero.png">
+<head>
+  <div class="nav-links">
+    <div class="nav-img"><a href="stanlee.html"><img src="img/png-transparent-iron-man-iceman-stan-lee-foundation-comics-superhero-stan-lee-comics-text-superhero.png" width="100" height="100"></a></div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="biography.html">BIOGRAPHY</a></li>
+        </ul>
+    </div>
+</head>
+
+<br><br>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #081b29;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #fff; 
+  height: 3000px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+<section>
+  <nav>
+    <ul>
+       <li><a href="Spider-Man">Spider-Man</a></li>
+        <li><a href="Wolverine">Wolverine</a></li>
+        <li><a href="Thor">Thor</a></li>
+        <li><a href="The Hulk">The Hulk</a></li>
+        <li><a href="Iron-Man">Iron-Man</a></li>
+        <li><a href="Captain America">Captain America</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Stan Lee's Work</h1>
+    <p><bold>Stan Lee was an American comic book writer, editor, publisher, and producer. He rose through teh ranks of a family-run business called Timely COmics which would later become Marvel Comics. It is said that Stan Lee created at least 300 characters. Here are some of them!</bold></p>
+          <div class="grid">
+            <div class="content flow">
+              <div id="Spider-Man">
+                <h2 class="title">Stan Lee and Spiderman</h2>
+                <p>Spiderman was created by Stan Lee in August 1962. Marvel's Spider-Man will be turning 60 this year!&#129473;</p>
+                <img src="img/spidey&stan.jpg">
+              </div>
+            </div>
+            <div class="content flow">
+              <div id="WOlverine">
+                <h2 class="title">Stan Lee and Wolverine</h2>
+                <p>Spiderman was created by stan lee</p>
+                <img src="img/stan&wolverine.jpg">
+              </div>
+            </div>
+            <div class="content flow featured">
+              <div id="Thor">
+                <h2 class="title">Stan Lee and Thor</h2>
+                <p>Thor was created by stan lee</p>
+                <img src="img/stanlee&thor.gif" alt="Thor and Stan Lee">
+                </div>
+            </div>
+            
+            <div class="content flow">
+              <div id="The Hulk">
+                <h2 class="title">Stan Lee and The Hulk</h2>
+                <p>The Hulk was created by Stan Lee and Jack Kirby in May of 1962.</p>
+                <img src="img/hulk&stan.jpeg">
+              </div>
+            </div>
+            <div class="content flow">
+              <div id="Iron-Man">
+                <h2 class="title">Stan Lee and Iron Man</h2>
+                <p>Iron Man was created by stan lee</p>
+                <img src="img/ironman&stan.jfif">
+              </div>
+            </div>
+            <div class="content flow">
+              <div id="Captain America">
+                <h2 class="title">Stan Lee and Captain America</h2>
+                <p>Stan Lee created Captian America. The Captain America Comics#1 was published on December 20, 1940, with cover daye of March 1941.</p>
+                <img src="img/stanlee&cap.jpg">
+              </div>
+            </div>
+</div> 
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+  <img src="img/png-transparent-iron-man-iceman-stan-lee-foundation-comics-superhero-stan-lee-comics-text-superhero.png" height="100" width="100>
+</footer>
+
+</body>
+</html>
